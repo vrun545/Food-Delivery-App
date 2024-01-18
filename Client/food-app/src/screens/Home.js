@@ -23,7 +23,7 @@ export default function Home() {
         throw new Error("Network response was not ok");
       }
       const result = await response.json();
-      setFoodItem(result[0] || []);  // Ensure default to empty array if data is not available
+      setFoodItem(result[0] || []); 
       setFoodCategory(result[1] || []);
     } catch (error) {
       console.error("Error fetching data:", error);
