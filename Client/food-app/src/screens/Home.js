@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import {URL} from "../Helper";
 
 export default function Home() {
 
@@ -12,7 +13,8 @@ export default function Home() {
 
   const loadData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/items", {
+
+      const response = await fetch(`${URL}/items`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

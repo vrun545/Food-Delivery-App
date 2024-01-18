@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import {URL} from "../Helper";
 import Footer from "../components/Footer";
+
 
 export default function Signup() {
   const [details, setDetails] = useState({
@@ -19,7 +21,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let result = await fetch("http://localhost:5000/api/createuser", {
+    let result = await fetch(`${URL}/createuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

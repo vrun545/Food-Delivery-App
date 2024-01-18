@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import {URL} from "../Helper";
+
 
 export default function Login() {
   const [details, setDetails] = useState({
@@ -17,7 +19,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let result = await fetch("http://localhost:5000/api/login", {
+    let result = await fetch(`${URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

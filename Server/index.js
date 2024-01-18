@@ -12,11 +12,11 @@ app.use(express.json());
 MongoDB()
   .then(() => {
     console.log("MongoDB Connected");
+    const PORT = process.env.PORT || 5000;
 
     // Server Listening at PORT: 5000
-    const port = 5000;
-    app.listen(port, () => {
-      console.log(`Server is listening at ${port}...`);
+    app.listen(PORT, () => {
+      console.log(`Server is listening at ${PORT}...`);
     });
   })
   .catch((err) => {
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 
-// app.use('/api/auth', require('./Routes/Auth'));
+
 app.use("/api", require("./Routes/CreateUser"));
 app.use("/api", require("./Routes/FoodItems"));
 app.use("/api", require("./Routes/LoginUser"));

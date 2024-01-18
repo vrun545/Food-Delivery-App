@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import {URL} from "../Helper";
+
 
 export default function MyOrder() {
   const [orderData, setOrderData] = useState({});
 
   const fetchMyOrder = async () => {
-    await fetch("http://localhost:5000/api/myOrderData", {
+    await fetch(`${URL}/myOrderData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
