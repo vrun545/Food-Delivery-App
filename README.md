@@ -4,7 +4,7 @@ Food Delivery App is a web application built using the MERN stack, allowing user
 
 ## Live Demo
 
-Explore the Food Delivery App: [BlissBite](https://blissbite.netlify.app/)
+Explore the Food Delivery App: [BlissBite](https://blissbite.netlify.app/)  &ensp;   👈(Click Here)
 
 **Sample Login Details:**
 - **Email:** vrun123@test.com
