@@ -30,7 +30,7 @@ Explore the Food Delivery App: [BlissBite](https://blissbite.netlify.app/)  &ens
   - Password Hashing for Security
 
 - **Frontend**:
-  - React
+  - ReactJS
   - Context API for State Management
 
 ## Getting Started
