@@ -1,4 +1,4 @@
-# Food Delivery App
+# Food Delivery App - BlissBite
 
 Food Delivery App is a web application built using the MERN stack, allowing users to seamlessly browse, order food items, and view their order history. The application provides user authentication through signup and login functionalities. The backend is implemented using Node.js, Express.js, and MongoDB, while the frontend is developed with React and utilizes Context API for state management.
 
